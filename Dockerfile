@@ -34,6 +34,9 @@ COPY --from=builder /app/package*.json ./
 # Cache dependencies using build mount for faster rebuilds
 RUN --mount=type=cache,target=/root/.npm npm ci --omit=dev --ignore-scripts
 
+# Install global dependencies again in the final stage
+RUN npm install -g @web3-storage/w3cli
+
 # Run as non-root user
 USER node
 
