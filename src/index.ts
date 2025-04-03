@@ -31,7 +31,7 @@ async function main() {
   const server = new Server(
     {
       name: "mcp-ipfs",
-      version: "0.1.3",
+      version: "0.1.4",
     },
     {
       capabilities: { tools: {} },

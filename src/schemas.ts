@@ -5,7 +5,7 @@ import { z } from "zod";
 export const W3LoginArgsSchema = z
   .object({})
   .describe(
-    "Initiates the w3 login process using the pre-configured email (W3_LOGIN_EMAIL env var). User MUST check email to complete authentication."
+    "Initiates the w3 login process using the pre-configured email (W3_LOGIN_EMAIL env var). Highlight to the user that they MUST check email to complete authentication."
   );
 export const W3SpaceLsArgsSchema = z.object({});
 export const W3SpaceUseArgsSchema = z.object({
