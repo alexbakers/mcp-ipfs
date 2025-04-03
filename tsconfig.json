@@ -1,0 +1,56 @@
+{
+    "compilerOptions": {
+      /* Base Options: */
+      "esModuleInterop": true, // Enables compatibility imports for CommonJS modules
+      "skipLibCheck": true, // Speeds up compilation by skipping type checking of declaration files
+      "target": "ES2022", // Target modern ECMAScript version compatible with Node 18+
+      "allowJs": false, // Don't allow JavaScript files to be compiled (optional, good practice)
+      "resolveJsonModule": true, // Allow importing JSON files (may be useful later)
+      "moduleDetection": "force", // Treat files as modules even without explicit imports/exports
+      "isolatedModules": true, // Ensure each file can be transpiled separately
+  
+      /* Strictness */
+      "strict": true, // Enable all strict type-checking options
+      "noUncheckedIndexedAccess": true, // More safety when accessing arrays/objects by index
+      // "noImplicitAny": true, // Already covered by "strict"
+      // "strictNullChecks": true, // Already covered by "strict"
+      // "strictFunctionTypes": true, // Already covered by "strict"
+      // "strictPropertyInitialization": true, // Already covered by "strict"
+  
+      /* If NOT transpiling with ESM or preferring CommonJS: */
+      // "module": "CommonJS",
+  
+      /* If your code relies on DOM APIs: */
+      // "lib": ["dom", "dom.iterable", "ESNext"],
+  
+      /* If you're using bundlers */
+      // "moduleResolution": "Bundler", // Or "NodeNext" for modern Node resolution
+      // "noEmit": true, // Let the bundler handle output
+  
+      /* Module settings for Node.js ES Modules */
+      "module": "NodeNext", // Use modern Node.js module system
+      "moduleResolution": "NodeNext", // Use modern Node.js module resolution algorithm
+      "outDir": "./dist", // Specify output directory for compiled JavaScript
+      "rootDir": "./src", // Specify the root directory of source files
+  
+      /* Type Checking */
+      "allowUnreachableCode": false, // Report errors on unreachable code
+      "allowUnusedLabels": false, // Report errors on unused labels
+      "exactOptionalPropertyTypes": true, // Differentiate between undefined and missing properties
+      "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statements
+      "noImplicitOverride": true, // Ensure overriding members explicitly use the 'override' keyword
+      "noImplicitReturns": true, // Report error when not all code paths in function return a value
+      "noPropertyAccessFromIndexSignature": true, // Require bracket notation for index signatures
+      "noUnusedLocals": true, // Report errors on unused local variables
+      "noUnusedParameters": true, // Report errors on unused parameters
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+  
+      /* Emit */
+      "declaration": true, // Generate corresponding '.d.ts' declaration files
+      "declarationMap": true, // Generate sourcemaps for declaration files
+      "sourceMap": true, // Generate '.map' source map files for debugging
+      "removeComments": false // Keep comments in the output (optional)
+    },
+    "include": ["src/**/*"], // Specifies which files TypeScript should compile
+    "exclude": ["node_modules", "dist"] // Specifies directories to exclude from compilation
+  }
