@@ -1,4 +1,4 @@
-name: Publish Package to Docker Рги
+name: Publish Package to Docker Hub
 
 on:
   push:
@@ -26,6 +26,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: alexbakers/mcp-ipfs
+          tags: latest
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5

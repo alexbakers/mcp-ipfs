@@ -1,7 +1,6 @@
-# 🪐 MCP IPFS Server (storacha.network via w3cli) 🛰️
+# 🪐 MCP IPFS Server (storacha.network) 🛰️
 
-[![Node.js CI](https://github.com/alexbakers/mcp-ipfs/actions/workflows/node.js.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/node.js.yml)
-[![npm version](https://badge.fury.io/js/mcp-ipfs.svg)](https://badge.fury.io/js/mcp-ipfs)
+[![Publish Docker](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml) [![Publish NPM](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml) [![npm version](https://badge.fury.io/js/mcp-ipfs.svg)](https://badge.fury.io/js/mcp-ipfs)
 
 A Node.js server implementing the [Model Context Protocol (MCP)](https://github.com/ModelContextProtocol/specification) for interacting with the [storacha.network](https://storacha.network/) platform via the `w3` command-line interface (`@web3-storage/w3cli`).
 
