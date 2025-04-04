@@ -1,6 +1,6 @@
 # 🪐 MCP IPFS Server (storacha.network) 🛰️
 
-[![Publish Docker](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml) [![Publish NPM](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml) [![npm version](https://badge.fury.io/js/mcp-ipfs.svg?v0.1.4)](https://badge.fury.io/js/mcp-ipfs)
+[![Publish Docker](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml) [![Publish NPM](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml) [![npm version](https://badge.fury.io/js/mcp-ipfs.svg?v0.1.5)](https://badge.fury.io/js/mcp-ipfs)
 
 A Node.js server implementing the [Model Context Protocol (MCP)](https://github.com/ModelContextProtocol/specification) for interacting with the [storacha.network](https://storacha.network/) platform via the `w3` command-line interface (`@web3-storage/w3cli`).
 
@@ -80,10 +80,10 @@ Build the image first (see Build section) or use the pre-built image `alexbakers
         "-i",
         "--rm",
         "-v",
-        "/path/to/your/data:/data",
+        "/path/to/your/project:/path/to/your/project",
         "-e",
         "W3_LOGIN_EMAIL",
-        "alexbakers/mcp-ipfs:latest"
+        "alexbakers/mcp-ipfs"
       ],
       "env": {
         "W3_LOGIN_EMAIL": "your-email@example.com"
@@ -98,7 +98,7 @@ Build the image first (see Build section) or use the pre-built image `alexbakers
 Several `w3` commands require **absolute filesystem paths** (e.g., `w3_up`, `w3_delegation_create --output`, `w3_proof_add`, `w3_can_blob_add`, `w3_can_store_add`).
 
 - **NPX:** Provide absolute paths from your host machine.
-- **Docker:** Provide absolute paths _inside the container_. If interacting with files from your host (e.g., uploading), you **must** mount the relevant host directory into the container using the `-v` flag (e.g., `-v /Users/me/uploads:/uploads`) and then use the _container path_ (e.g., `/uploads/my_file.txt`) in the tool arguments.
+- **Docker:** Provide absolute paths _inside the container_. If interacting with files from your host (e.g., uploading), you **must** mount the relevant host directory into the container using the `-v` flag (e.g., `-v /Users/me/project:/Users/me/project`) and then use the _container path_ (e.g., `/Users/me/project/my_file.txt`) in the tool arguments.
 
 ## 📦 Build
 

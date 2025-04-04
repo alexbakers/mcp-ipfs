@@ -31,7 +31,7 @@ async function main() {
   const server = new Server(
     {
       name: "mcp-ipfs",
-      version: "0.1.4",
+      version: "0.1.5",
     },
     {
       capabilities: { tools: {} },
@@ -57,7 +57,11 @@ async function main() {
         // Special description overrides for enhanced clarity
         if (toolName === "w3_login") {
           description =
-            "Initiates the w3 login process using the pre-configured email (W3_LOGIN_EMAIL env var). The user MUST check their email to complete authentication. Note: The command waits for email validation. If the final output includes 'Agent was authorized by', the user has already clicked the link and is successfully authorized.";
+            "Initiates the w3 login process using the pre-configured email (W3_LOGIN_EMAIL env var). NOTE: The command waits for email validation. Highlight to the user that they MUST check email to complete authentication. If the final output includes 'Agent was authorized by', the user has already clicked the link and is successfully authorized.";
+        }
+        if (toolName === "w3_space_info" || toolName === "w3_space_ls") {
+          description +=
+            ' NOTE: `no current space and no space given` or `{"spaces":[]}` first make sure you are logged in before using other tools.';
         }
         if (toolName === "w3_space_create") {
           description +=
