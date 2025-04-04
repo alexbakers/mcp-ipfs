@@ -31,7 +31,7 @@ async function main() {
   const server = new Server(
     {
       name: "mcp-ipfs",
-      version: "0.1.7",
+      version: "0.1.8",
     },
     {
       capabilities: { tools: {} },
@@ -57,7 +57,7 @@ async function main() {
         // Special description overrides for enhanced clarity
         if (toolName === "w3_login") {
           description =
-            "Initiates the w3 login process using the pre-configured email (W3_LOGIN_EMAIL env var). NOTE: The command waits for email validation. Highlight in large letters with an emoji to draw attention that the user MUST check the email to complete authentication. If the final output includes 'Agent was authorized by', the user has already clicked the link and is successfully authorized, CONTINUE using mcp-ipfs tools. 'Too Many Requests': wait a moment before requesting it again.";
+            "Initiates the w3 login process using the pre-configured email (W3_LOGIN_EMAIL env var). IMPORTANT: The command expects email confirmation, so before running the `w3_login` tool, emphasize ATTENTION to the user in large letters + emoji that they MUST check email to complete authentication. If the final output includes 'Agent was authorized by', the user has already clicked the link and is successfully authorized, CONTINUE using mcp-ipfs tools. 'Too Many Requests': wait a moment before requesting it again.";
         }
         if (toolName === "w3_space_info" || toolName === "w3_space_ls") {
           description +=
