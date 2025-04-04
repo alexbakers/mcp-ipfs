@@ -1,6 +1,6 @@
 {
   "name": "mcp-ipfs",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "description": "MCP Server for interacting with the IPFS Storacha Network",
   "main": "dist/index.js",
