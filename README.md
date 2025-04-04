@@ -1,10 +1,14 @@
 # 🪐 MCP IPFS Server (storacha.network) 🛰️
 
-[![Publish Docker](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml) [![Publish NPM](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml) [![npm version](https://badge.fury.io/js/mcp-ipfs.svg?v0.1.5)](https://badge.fury.io/js/mcp-ipfs)
+[![Screenshot](https://raw.githubusercontent.com/alexbakers/mcp-ipfs/refs/heads/main/mcp-ipfs.png)](https://raw.githubusercontent.com/alexbakers/mcp-ipfs/refs/heads/main/mcp-ipfs.mp4)
+
+[![Publish Docker](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-docker.yml) [![Publish NPM](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml/badge.svg)](https://github.com/alexbakers/mcp-ipfs/actions/workflows/publish-npm.yml) [![npm version](https://badge.fury.io/js/mcp-ipfs.svg?v0.1.6)](https://badge.fury.io/js/mcp-ipfs)
 
 A Node.js server implementing the [Model Context Protocol (MCP)](https://github.com/ModelContextProtocol/specification) for interacting with the [storacha.network](https://storacha.network/) platform via the `w3` command-line interface (`@web3-storage/w3cli`).
 
 This server empowers language models 🤖 and other MCP clients to manage storacha.network spaces, upload/download data, manage delegations, and perform various other tasks by seamlessly wrapping `w3` commands.
+
+<video src="https://raw.githubusercontent.com/alexbakers/mcp-ipfs/refs/heads/main/mcp-ipfs.mp4"></video>
 
 ## ✨ Features
 
