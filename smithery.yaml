@@ -1,0 +1,20 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - w3LoginEmail
+    properties:
+      w3LoginEmail:
+        type: string
+        description: Email to authenticate with w3 CLI, must match your w3 login email.
+    default: {}
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/index.js'], env: { W3_LOGIN_EMAIL: config.w3LoginEmail } })
+  exampleConfig:
+    w3LoginEmail: user@example.com
