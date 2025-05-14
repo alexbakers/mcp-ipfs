@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/alexbakers-mcp-ipfs-badge.png)](https://mseep.ai/app/alexbakers-mcp-ipfs)
+
 # 🪐 MCP IPFS Server (storacha.network) 🛰️
 
 ![Screenshot](https://raw.githubusercontent.com/alexbakers/mcp-ipfs/refs/heads/main/mcp-ipfs.png?neon-game)
